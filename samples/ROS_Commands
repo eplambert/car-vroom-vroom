@@ -1,0 +1,19 @@
+ROS Commands
+to be executed on the command line
+
+
+// search for ros package
+rospack find [package_name]
+
+// change directory directly to a package or stack
+roscd [locationname[/subdir]]
+
+example - go to the ros log
+roscd log
+
+// list directly in a package
+rosls [locationname[/subdir]]
+
+example - ls tutorial
+rosls roscpp_tutorials
+
