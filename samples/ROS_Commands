@@ -1,6 +1,7 @@
 ROS Commands
 to be executed on the command line
-
+// For full list see here:
+http://wiki.ros.org/ROS/CommandLineTools
 
 // search for ros package
 rospack find [package_name]
