@@ -38,3 +38,40 @@ $ catkin_create_pkg beginner_tutorials std msgs rospy roscpp
 // Step 3 ~ confirm dependencies
 
 $ rospack depends1 beginner_tutorials
+
+
+######### Setting up Python Project #########
+
+// First things first... get your code in github
+
+// Step 1 ~ find your package
+
+--- may need to perform the following ---
+$ cd ~/<ws_name>
+$ catkin_make
+$ source ./devel/setup.bash
+$ roscd <package name>
+
+// Step 2 ~ make a scripts directory to store python scripts
+
+$ mkdir scripts
+$ cd scripts
+
+// Step 3 ~ download your python files to the directory
+
+// click on the raw tab in github and copy the url path
+
+$ wget https://raw.githubusercontent.com/eplambert/car-vroom-vroom/master/samples/beginner_tutorials/talker.py
+$ chmod +x talker.py
+
+// Step 4 ~ make edits to the file
+
+$ rosed beginner_tutorials talker.py
+
+
+
+
+
+
+
+
