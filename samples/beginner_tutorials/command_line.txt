@@ -1,0 +1,40 @@
+
+######### Creating a workspace #########
+
+// Perform the below steps to create a workspace
+
+// Step 1 ~ source the setup
+
+$ source ~/.bashrc
+$ source /opt/ros/kinetic/setup.bash
+
+
+// Step 2 ~ create and build a catkin workspace
+
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/
+$ catkin_make
+
+// Step 3 ~ source your new setup
+
+$ source devel/setup.bash
+
+// Step 4 ~ check if the workspace is working
+
+$ echo $ROS_PACKAGE_PATH
+
+
+######### Creating a Package #########
+
+// Step 1 ~ Go to the source of your create workspace
+
+$ cd ~/catkin_ws/src
+
+// Step 2 ~ use catkin to create the package
+// catkin_create_pkg <package_name> [depend1] [depend2] [depend3] ...
+
+$ catkin_create_pkg beginner_tutorials std msgs rospy roscpp
+
+// Step 3 ~ confirm dependencies
+
+$ rospack depends1 beginner_tutorials
