@@ -1,0 +1,17 @@
+<launch>
+
+    <!--
+      follow_offset: The x offset between the car and the clone
+      force_in_bounds: Whether or not bounds for the clone should be checked
+    -->
+    
+
+   <!--
+	Launch a clone_follower node here
+   -->
+   <node pkg="lab0_sim" type="CloneFollower.py" name="clone_follower" output="screen" >
+   		<param name="follow_offset" value="1.5" type="double" />
+    	<param name="force_in_bounds" value="True" type="bool" />
+   </node>
+
+</launch>
