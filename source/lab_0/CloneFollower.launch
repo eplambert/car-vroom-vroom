@@ -9,7 +9,7 @@
    <!--
 	Launch a clone_follower node here
    -->
-   <node pkg="lab0_sim" type="CloneFollower.py" name="clone_follower" output="screen" >
+   <node pkg="lab0" type="CloneFollower.py" name="clone_follower" output="screen" >
    		<param name="follow_offset" value="1.5" type="double" />
     	<param name="force_in_bounds" value="True" type="bool" />
    </node>
